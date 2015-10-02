@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{398E5F3E-2F9F-4005-A50E-0A92314BE96B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CNPSoft</RootNamespace>
+    <AssemblyName>CNPSoft</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icono.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\C_Baliza.cs" />
+    <Compile Include="Clases\C_Competencia.cs" />
+    <Compile Include="Clases\C_Competidor.cs" />
+    <Compile Include="Clases\C_Fichero.cs" />
+    <Compile Include="Clases\C_Manga.cs" />
+    <Compile Include="Clases\C_Piloto.cs" />
+    <Compile Include="Frm_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Principal.Designer.cs">
+      <DependentUpon>Frm_Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_AnadirBalizas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_AnadirBalizas.Designer.cs">
+      <DependentUpon>Frm_AnadirBalizas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_AnadirPiloto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_AnadirPiloto.Designer.cs">
+      <DependentUpon>Frm_AnadirPiloto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ProcesarResultadoManga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ProcesarResultadoManga.Designer.cs">
+      <DependentUpon>Frm_ProcesarResultadoManga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ConfeccionManga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ConfeccionManga.Designer.cs">
+      <DependentUpon>Frm_ConfeccionManga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ResultadosPiloto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ResultadosPiloto.Designer.cs">
+      <DependentUpon>Frm_ResultadosPiloto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ResultadoTodasMangas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ResultadoTodasMangas.Designer.cs">
+      <DependentUpon>Frm_ResultadoTodasMangas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frm_Principal.resx">
+      <DependentUpon>Frm_Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_AnadirBalizas.resx">
+      <DependentUpon>Frm_AnadirBalizas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_AnadirPiloto.resx">
+      <DependentUpon>Frm_AnadirPiloto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ProcesarResultadoManga.resx">
+      <DependentUpon>Frm_ProcesarResultadoManga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ConfeccionManga.resx">
+      <DependentUpon>Frm_ConfeccionManga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ResultadosPiloto.resx">
+      <DependentUpon>Frm_ResultadosPiloto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ResultadoTodasMangas.resx">
+      <DependentUpon>Frm_ResultadoTodasMangas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icono.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
